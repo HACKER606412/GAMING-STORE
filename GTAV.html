@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA V</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper CSS File Link -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <style>
+        /* Custom CSS for glowing effect */
+        .system-requirements, .recommended-requirements {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #1e1e1e;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(250, 83, 83, 0.6), 0 0 10px rgba(250, 83, 83, 0.4);
+            text-align: left;
+        }
+
+        .system-requirements h2, .recommended-requirements h2 {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff;
+        }
+
+        .system-requirements ul, .recommended-requirements ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .system-requirements ul li, .recommended-requirements ul li {
+            margin: 10px 0;
+            list-style: square;
+        }
+
+        /* Styling for Recommended Requirements to make it visually stand out */
+        .recommended-requirements {
+            background: #1e1e1e; /* Darker background to differentiate */
+            box-shadow: 0 0 20px rgba(250, 83, 83, 0.6), 0 0 10px rgba(250, 83, 83, 0.4);
+        }
+
+        .recommended-requirements h2 {
+            color: #ffffff; /* Green color for the heading */
+            text-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff; 
+        }
+
+        /* Screenshots Section */
+        .screenshots-content {
+            margin: 20px auto;
+            text-align: left; /* Aligning images to the left */
+        }
+
+        .screenshots-content img {
+            width: 355px; /* Fixed width */
+            height: 317px; /* Fixed height */
+            margin-bottom: 30px; /* Increased space between images */
+            border-radius: 10px; /* Rounded corners */
+            object-fit: cover; /* Maintain aspect ratio */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Shadow for visuals */
+            transition: transform 0.3s ease;
+        }
+
+        .screenshots-content img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        /* Button Style */
+        .download-links a {
+            background-color: #fa5353; /* Button color */
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin: 20px 0; /* Top and bottom margin */
+        }
+
+        .download-links a:hover {
+            background-color: #e63e3e; /* Hover effect */
+        }
+
+        /* Centering the button */
+        .download {
+            display: flex;
+            justify-content: center; /* Centering horizontally */
+            align-items: center;    /* Centering vertically */
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Scroll Bar -->
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">Game<span>store</span></a>
+            <!-- Nav Icons -->
+            <div class="nav-icons">
+                <i class='bx bx-bell bx-tada' id="bell-icon"><span></span></i>
+                <i class='bx bxs-download'></i>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="menu">
+                <img src="menu.png" alt="">
+                <div class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#new">New Games</a></li>
+                    <li><a href="#action">Action Games</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </div>
+            </div>
+            <!-- Notification -->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class='bx bxs-check-circle'></i>
+                    <p>Congratulation, Your game download successfully.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class='bx bxs-x-circle'></i>
+                    <p>Could not apply changes.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Video -->
+    <div class="video-contaner">
+        <img src="gta-5-landscape-art-2a58lbxzfpa0xjg7.jpg" alt="GTA V Landscape">
+    </div>
+
+    <!-- About -->
+    <div class="about container">
+        <h2>ABOUT GAME</h2>
+        <p>To stay alive in a brutal city where no one can be trusted, not even each other, they have to carry out a series of risky robberies.Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second. The game offers players a huge range of PC-specific customization options, including over 25 separate configurable settings for texture quality, shaders, tessellation, anti-aliasing and more, as well as support and extensive customization for mouse and keyboard controls. Additional options include a population density slider to control car and pedestrian traffic, as well as dual and triple monitor support, 3D compatibility, and plug-and-play controller support.</p>
+    </div>
+
+    <!-- System Requirements -->
+    <div class="system-requirements">
+        <h2>System Requirements</h2>
+        <ul>
+            <li><strong>OS:</strong> Windows 7, 8, 10 (64-bit)</li>
+            <li><strong>Processor:</strong> Intel Core i5-3470 @ 3.2GHz / AMD FX-8350 @ 4GHz</li>
+            <li><strong>Memory:</strong> 8 GB RAM</li>
+            <li><strong>Graphics:</strong> NVIDIA GTX 660 2GB / AMD HD 7870 2GB</li>
+            <li><strong>Storage:</strong> 72 GB available space</li>
+            <li><strong>DirectX:</strong> Version 11</li>
+        </ul>
+    </div>
+
+    <!-- Recommended System Requirements -->
+    <div class="recommended-requirements">
+        <h2>Recommended System Requirements</h2>
+        <ul>
+            <li><strong>OS:</strong> Windows 10 (64-bit)</li>
+            <li><strong>Processor:</strong> Intel Core i7-6700K @ 4.00GHz / AMD Ryzen 7 2700X @ 3.7GHz</li>
+            <li><strong>Memory:</strong> 16 GB RAM</li>
+            <li><strong>Graphics:</strong> NVIDIA GTX 1060 6GB / AMD RX 580 8GB</li>
+            <li><strong>Storage:</strong> 72 GB SSD or HDD</li>
+            <li><strong>DirectX:</strong> Version 12</li>
+        </ul>
+    </div>
+     <!-- NOTE -->
+     <div class="about container">
+        <h2>NOTE:</h2>
+     <p>NOTICE: This game is already pre-installed for you, meaning you don’t have to install it. If you get any missing dll errors, make sure to look for a _Redist or _CommonRedist folder and install directx, vcredist and all other programs in that folder. You need these programs for the game to run. Look for a ‘HOW TO RUN GAME!!.txt’ file for more help. Also, be sure to right click the exe and always select “Run as administrator” if you’re having problems saving the game. Always disable your anti virus before extracting the game to prevent it from deleting the crack files. If you need additional help,
+
+     </p>
+
+    <!-- ScreenShots -->
+    <div class="screenshots container">
+        <h2>ScreenShots</h2>
+        <div class="screenshots-content">
+            <img src="envirom.webp" alt="Environment">
+            <img src="ceedmxc.webp" alt="Car Chase">
+            <img src="GTA V Red Ferrari 4K Ultra HD Mobile Phone Wallpaper.jpg" alt="Ferrari">
+        </div>
+    </div>
+
+    <!-- Download -->
+    <div class="download">
+        <div class="download-links"><i class="fa fa-align-center" aria-hidden="true"></i>
+            <a href="https://files.yasir252.com.ng/h-three/">For Windows</a>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright container">
+        <a href="#" class="logo">Game<span>Store</span></a>
+        <p>GameStore All Right Reserved</p>
+    </div>
+
+    <!-- Link Swiper File -->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- Link to JS -->
+    <script src="main.js"></script>
+</body>
+</html>

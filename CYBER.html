@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper CSS File Link -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <style>
+        /* Custom CSS for glowing effect */
+        .system-requirements, .recommended-requirements {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #1e1e1e;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(250, 83, 83, 0.6), 0 0 10px rgba(250, 83, 83, 0.4);
+            text-align: left;
+        }
+
+        .system-requirements h2, .recommended-requirements h2 {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff;
+        }
+
+        .system-requirements ul, .recommended-requirements ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .system-requirements ul li, .recommended-requirements ul li {
+            margin: 10px 0;
+            list-style: square;
+        }
+
+        /* Styling for Recommended Requirements to make it visually stand out */
+        .recommended-requirements {
+            background: #1e1e1e; /* Darker background to differentiate */
+            box-shadow: 0 0 20px rgba(250, 83, 83, 0.6), 0 0 10px rgba(250, 83, 83, 0.4);
+        }
+
+        .recommended-requirements h2 {
+            color: #ffffff; /* Green color for the heading */
+            text-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff; 
+        }
+
+        /* Screenshots Section */
+        .screenshots-content {
+            margin: 20px auto;
+            text-align: left; /* Aligning images to the left */
+        }
+
+        .screenshots-content img {
+            width: 355px; /* Fixed width */
+            height: 317px; /* Fixed height */
+            margin-bottom: 30px; /* Increased space between images */
+            border-radius: 10px; /* Rounded corners */
+            object-fit: cover; /* Maintain aspect ratio */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Shadow for visuals */
+            transition: transform 0.3s ease;
+        }
+
+        .screenshots-content img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        /* Button Style */
+        .download-links a {
+            background-color: #fa5353; /* Button color */
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin: 20px 0; /* Top and bottom margin */
+        }
+
+        .download-links a:hover {
+            background-color: #e63e3e; /* Hover effect */
+        }
+
+        /* Centering the button */
+        .download {
+            display: flex;
+            justify-content: center; /* Centering horizontally */
+            align-items: center;    /* Centering vertically */
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Scroll Bar -->
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">Game<span>store</span></a>
+            <!-- Nav Icons -->
+            <div class="nav-icons">
+                <i class='bx bx-bell bx-tada' id="bell-icon"><span></span></i>
+                <i class='bx bxs-download'></i>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="menu">
+                <img src="menu.png" alt="">
+                <div class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#new">New Games</a></li>
+                    <li><a href="#action">Action Games</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </div>
+            </div>
+            <!-- Notification -->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class='bx bxs-check-circle'></i>
+                    <p>Congratulation, Your game download successfully.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class='bx bxs-x-circle'></i>
+                    <p>Could not apply changes.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Video -->
+    <div class="video-contaner">
+        <img src="home.png" alt="">
+    </div>
+
+    <!-- About -->
+    <div class="about container">
+        <h2>ABOUT GAME</h2>
+        <p>Cyberpunk 2077 is an open-world action role-playing game developed by CD Projekt Red. Set in the dystopian future of Night City, a sprawling, neon-lit metropolis, the game blends immersive storytelling with futuristic technology, deep narrative choices, and a vast, living world. Here's a detailed description: Cyberpunk 2077 takes place in the year 2077, within the cyberpunk subgenre of science fiction. This setting is characterized by advanced technology, a decayed society, rampant corporate control, and a disparity between the rich and the poor. Night City, located on the Pacific coast of California, is a vast, open-world city, filled with districts that reflect different facets of the game’s diverse and grim universe.
+
+            Night City is a city of contrasts, where towering skyscrapers and ultra-modern tech stand in stark contrast to dark alleyways, slums, and street gangs. Each district is alive with activity, including the entertainment district Westbrook, the corporate hub City Center, the violent and impoverished Heywood, and the industrial Santo Domingo.
+            
+            The city is constantly bustling with NPCs (non-playable characters) who move through daily life, creating an immersive environment. Neon signs, billboards, and holograms light the streets, adding to the game’s futuristic aesthetic. Cyberpunk 2077 is an open-world, first-person role-playing game, with players assuming the role of V and undertaking missions across the expansive city. The gameplay features a mix of combat, exploration, dialogue choices, hacking, and quest-solving. Here are some key aspects:
+
+            Character Customization:
+            
+            Players can modify V’s appearance, background, and skills. V's attributes include Body, Intelligence, Reflexes, Technical Ability, and Cool. These attributes shape the way V interacts with the world, influencing combat abilities, dialogue options, and even how certain missions unfold.
+            There’s a wide range of cyberware (augmentations) that can be implanted into V, granting abilities like enhanced strength, the ability to hack into systems, or see through walls.
+            Combat:
+
+    <!-- System Requirements -->
+<div class="system-requirements">
+    <h2>System Requirements</h2>
+    <ul>
+        <li><strong>OS:</strong> Windows 7 (64-bit), Windows 10 (64-bit)</li>
+        <li><strong>Processor:</strong> Intel Core i5-3570K or AMD Ryzen 3 3200G</li>
+        <li><strong>Memory:</strong> 8 GB RAM</li>
+        <li><strong>Graphics:</strong> NVIDIA GeForce GTX 780 3GB or AMD Radeon RX 470 4GB</li>
+        <li><strong>Storage:</strong> 70 GB available space</li>
+        <li><strong>DirectX:</strong> Version 12</li>
+    </ul>
+</div>
+
+<!-- Recommended System Requirements -->
+<div class="recommended-requirements">
+    <h2>Recommended System Requirements</h2>
+    <ul>
+        <li><strong>OS:</strong> Windows 10 (64-bit)</li>
+        <li><strong>Processor:</strong> Intel Core i7-4790 or AMD Ryzen 5 3600</li>
+        <li><strong>Memory:</strong> 12 GB RAM</li>
+        <li><strong>Graphics:</strong> NVIDIA GeForce GTX 1060 6GB or AMD Radeon RX 590</li>
+        <li><strong>Storage:</strong> 70 GB SSD</li>
+        <li><strong>DirectX:</strong> Version 12</li>
+    </ul>
+</div>
+     <!-- NOTE -->
+     <div class="about container">
+        <h2>NOTE:</h2>
+     <p>NOTICE: This game is already pre-installed for you, meaning you don’t have to install it. If you get any missing dll errors, make sure to look for a _Redist or _CommonRedist folder and install directx, vcredist and all other programs in that folder. You need these programs for the game to run. Look for a ‘HOW TO RUN GAME!!.txt’ file for more help. Also, be sure to right click the exe and always select “Run as administrator” if you’re having problems saving the game. Always disable your anti virus before extracting the game to prevent it from deleting the crack files. If you need additional help,
+
+     </p>
+
+    <!-- ScreenShots -->
+    <div class="screenshots container"> 
+        <h2>ScreenShots</h2>
+        <div class="screenshots-content">
+            <img src="CYBERG.webp" alt="Environment">
+            <img src="ITEM.webp" alt="Car Chase">
+            <img src="CYBERG.webp" alt="Ferrari">
+        </div>
+    <!-- Download -->
+    <div class="download">
+        <div class="download-links"><i class="fa fa-align-center" aria-hidden="true"></i>
+            <a href="https://mega.nz/file/zIg0FaDR#UZqyZeTZK6TE06JAyt_iINHKdvzA6QkKY6WxKw_4zwI
+            ">For Windows</a>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright container">
+        <a href="#" class="logo">Game<span>Store</span></a>
+        <p>GameStore All Right Reserved</p>
+    </div>
+
+    <!-- Link Swiper File -->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- Link to JS -->
+    <script src="main.js"></script>
+</body>
+</html>
